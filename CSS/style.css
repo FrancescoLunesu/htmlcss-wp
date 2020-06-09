@@ -14,6 +14,10 @@
 body{
     background-color: lightgray;
     font-family: 'Roboto', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1526212116491-7cf8741193e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
@@ -24,9 +28,9 @@ body{
 /*definisco header*/
 header{
     height: 400px;
-    background-color: yellow;
+    background-color: lightgray;
     border: 10px solid white;
-    background-image:url(https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-image:url(https://images.unsplash.com/photo-1547093349-65cdba98369a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -47,7 +51,7 @@ header .titolo{
 
 nav{
     height: 50px;
-    background-color: lightblue;
+    background-color: lightgray;
     margin: 0 10px;
     text-align: center;
     font-style:
@@ -60,7 +64,13 @@ ul li{
 }
 
 .menu{
-    color: whitesmoke;
+    color: black;
+}
+
+.menu:hover{
+    border-top: 1px solid coral;
+    border-bottom: 1px solid coral;
+    color: coral;
 }
 
 a{
@@ -70,20 +80,17 @@ a{
 /*definisco l'aside sinistro*/
 aside{
     width:20%;
-    height:400px;
     padding:10px;
     float:left;
 }
 
 aside .left{
-    height: 100%;
     background-color: whitesmoke;
     border-radius: 10px;
 }
 
 .archivio{
     padding: 10px;
-    height: 50px;
     line-height:
 }
 .archivio i{
@@ -107,13 +114,11 @@ aside .left{
 /*definisco il main*/
 main{
     width:60%;
-    height:500px;
     padding:10px;
     float:left;
 }
 main .center{
     background-color: whitesmoke;
-    height: 100%;
     border-radius: 10px;
 }
 
@@ -130,9 +135,9 @@ main div .testo h2{
 
 /*definisco aside destro che contiene al suo interno due div*/
 aside .right{
-    height: 70%;
     background-color: whitesmoke;
     border-radius: 10px;
+    padding: 10px;
 }
 
 aside .right:first-child{
@@ -145,7 +150,21 @@ aside .right:last-child{
 /*definisco il footer*/
 
 footer{
-    height: 80px;
-    background-color: lightblue;
+    background-color: whitesmoke;
     margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer div .autore{
+}
+
+div .social{
+    text-align: center;
+}
+div .social .facebook, .instagram, .github{
+    display: inline-block;
+    padding: 30px 100px;
+
 }
