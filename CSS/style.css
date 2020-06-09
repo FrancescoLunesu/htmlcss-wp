@@ -1,0 +1,151 @@
+/*formattazione*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+body{
+    background-color: lightgray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/*definisco header*/
+header{
+    height: 400px;
+    background-color: yellow;
+    border: 10px solid white;
+    background-image:url(https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 10px;
+    position: relative;
+}
+
+header .titolo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    padding: 10px;
+}
+
+nav{
+    height: 50px;
+    background-color: lightblue;
+    margin: 0 10px;
+    text-align: center;
+    font-style:
+}
+
+ul li{
+    display: inline;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.menu{
+    color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*definisco l'aside sinistro*/
+aside{
+    width:20%;
+    height:400px;
+    padding:10px;
+    float:left;
+}
+
+aside .left{
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.archivio{
+    padding: 10px;
+    height: 50px;
+    line-height:
+}
+.archivio i{
+    color: orange;
+    font-size: 25px;
+    line-height: 50px;
+    vertical-align:top;
+}
+
+.archivio h3{
+    color:gray;
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.archivio div a{
+    color: green;
+}
+
+/*definisco il main*/
+main{
+    width:60%;
+    height:500px;
+    padding:10px;
+    float:left;
+}
+main .center{
+    background-color: whitesmoke;
+    height: 100%;
+    border-radius: 10px;
+}
+
+main div .testo{
+    padding: 20px;
+    line-height: 30px;
+    font-style: bold;
+    text-align: left;
+}
+
+main div .testo h2{
+    text-shadow:1px 1px 2px #000000;
+}
+
+/*definisco aside destro che contiene al suo interno due div*/
+aside .right{
+    height: 70%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+aside .right:first-child{
+    margin-bottom:15px;
+}
+aside .right:last-child{
+    margin-top:15px;
+}
+
+/*definisco il footer*/
+
+footer{
+    height: 80px;
+    background-color: lightblue;
+    margin: 10px;
+}
